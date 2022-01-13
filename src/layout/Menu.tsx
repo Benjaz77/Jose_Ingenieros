@@ -45,7 +45,7 @@ const Menu = ({ dense = false }: MenuProps) => {
       <SubMenu
         handleToggle={() => handleToggle('menuCatalog')}
         isOpen={state.menuCatalog}
-        name="pos.menu.catalog"
+        name="Cursos"
         icon={<cursos.icon />}
         dense={dense}
       >
@@ -55,7 +55,7 @@ const Menu = ({ dense = false }: MenuProps) => {
             pathname: '/products',
             state: { _scrollToTop: true },
           }}
-          primaryText={translate(`resources.products.name`, {
+          primaryText={translate(`Algebra`, {
             smart_count: 2,
           })}
           leftIcon={<cursos.icon />}
@@ -65,7 +65,7 @@ const Menu = ({ dense = false }: MenuProps) => {
       {/* @ts-ignore */}
       <MenuItemLink
         to={'/cursos'}
-        primaryText={translate(`resources.reviews.name`, {
+        primaryText={translate(`cursos`, {
           smart_count: 2,
         })}
         leftIcon={<cursos.icon />}
